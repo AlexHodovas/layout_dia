@@ -95,7 +95,7 @@ button {
       font-size: 20px;
       line-height: 140%;
       color: #fff; }
-  .header-bottom__social {
+  .header-bottom__follow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,7 +107,7 @@ button {
     position: absolute;
     left: calc(100% - 291px);
     top: 340px; }
-    .header-bottom__social > * {
+    .header-bottom__follow > * {
       font-weight: 800;
       font-size: 13px;
       line-height: 150%;
@@ -138,7 +138,7 @@ button {
       font-size: 35px; }
     .header-top__quote {
       font-size: 20px; }
-  .header-bottom__social {
+  .header-bottom__follow {
     left: calc(100% - 300px); }
   .header-bottom .intro,
   .header-bottom .intro-quote {
