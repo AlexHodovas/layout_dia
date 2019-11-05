@@ -1,7 +1,7 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
 
-body {
-  background: $c-gray;
-}
+@import "header";
+@import "nav";
+@import "heading";
+@import "welcome";
+@import "what-we-do";
