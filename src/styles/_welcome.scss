@@ -1,0 +1,29 @@
+.welcome {
+  margin-left: 423px;
+  margin-bottom: 136px;
+
+  &__heading {
+    margin-top: calc( -320px + 165px);
+  }
+
+  &__about {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #253757;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .welcome {
+    margin-left: calc(50% - 300px);
+    margin-right: calc(50% - 300px);
+  }
+}
+
+@media (max-width: 999px) {
+  .welcome {
+    margin-left: calc(50% - 200px);
+    margin-right: calc(50% - 200px);
+  }
+}
