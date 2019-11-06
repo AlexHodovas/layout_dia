@@ -8,4 +8,10 @@
   height: 21px;
   line-height: 21px;
   margin-bottom: 19px;
+
+  &--white {
+    color: #fff;
+    background: url(../images/rectangular-white.svg) no-repeat;
+    background-position-y: bottom;
+  }
 }

@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .what-we-do {
   margin-top: 136px;
 
@@ -13,7 +14,10 @@
     margin-top: 136px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+  }
+
+  .card:first-child {
+    margin-left: 227px;
   }
 
   .card {
@@ -47,6 +51,15 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .what-we-do {
+
+    &__cards {
+      justify-content: center;
+    }
+  }
+}
+
 @media (max-width: 999px) {
   .what-we-do {
     margin-top: 70px;
@@ -57,10 +70,15 @@
 
     &__cards {
       margin-top: 70px;
+      margin-left: 150px;
     }
 
     .card {
       margin-left: 50px;
+
+      &:first-child {
+        margin-left: 0;
+      }
 
       &__about {
         margin-top: 30px;
@@ -73,7 +91,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 
   .what-we-do {
     margin-top: 0;
@@ -82,12 +100,18 @@
       margin-top: 30px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
+      margin-left: 0;
+    }
+
+    .card:first-child {
+      margin-left: 0;
     }
 
     .card {
       margin-top: 10px;
-      margin-left: 129px;
+      margin-left: 0;
 
       &__about {
         margin-top: 20px;
