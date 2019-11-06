@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 162px;
   padding-bottom: 291px;
-  background: #e5e5e5;
+  background: #fcfcfd;
 
   .main-card {
     padding-top: 160px;
@@ -46,6 +46,7 @@
     }
   }
 }
+
 /* stylelint-disable */
 .additional-card {
   background: #fff;
@@ -56,9 +57,9 @@
     width: 48px;
     height: 48px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
-  rgba(255, 255, 255, 0) 100%),
-    linear-gradient(0deg, #56ccf2, #56ccf2),
-  #c4c4c4;
+        rgba(255, 255, 255, 0) 100%),
+      linear-gradient(0deg, #56ccf2, #56ccf2),
+      #c4c4c4;
     opacity: 0.1;
     border-radius: 50%;
   }
@@ -88,8 +89,8 @@
   &__2 {
     &__circle {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0) 100%),
-    #fcc304;
+          rgba(255, 255, 255, 0) 100%),
+        #fcc304;
     }
 
     &__figure {
@@ -100,9 +101,9 @@
   &__3 {
     &__circle {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0) 100%),
-      linear-gradient(0deg, #03d542, #03d542),
-    #c4c4c4;
+          rgba(255, 255, 255, 0) 100%),
+        linear-gradient(0deg, #03d542, #03d542),
+        #c4c4c4;
     }
 
     &__figure {
@@ -113,8 +114,8 @@
   &__4 {
     &__circle {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0) 100%),
-    #f25656;
+          rgba(255, 255, 255, 0) 100%),
+        #f25656;
     }
 
     &__figure {
@@ -159,28 +160,21 @@
 
   .process {
 
-    .additional-cards-1col {
-      left: 100px;
-      top: 30px;
-
-      &--2col {
-        left: 400px;
-        top: 650px;
-      }
+    .main-card {
+      padding-top: 40px;
+      margin-left: 100px;
     }
-  }
-}
-
-@media (max-width: 600px) {
-
-  .process {
 
     .additional-cards-1col {
-      left: 70px;
+      left: calc(100% - 400px);
+      top: 30px;
+      grid-row-gap: 20px;
 
       &--2col {
-        left: 360px;
-        top: 690px;
+        left: calc(100% - 400px);
+        top: 50px;
+        position: relative;
+        grid-row-gap: 20px;
       }
     }
   }

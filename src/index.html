@@ -18,32 +18,40 @@
     <div class="header-top">
 
       <nav class="nav header__nav">
-        <a href="#">
-          <img class="nav__logo" src="images/logo/dia-logo.svg" alt="logo">
-        </a>
+
         <ul class="nav__list">
+
           <li class="nav__list_item">
-            <a href="#">Home</a>
+            <a href="#">
+              <img class="logo" src="images/logo/dia-logo.svg" alt="logo">
+            </a>
           </li>
           <li class="nav__list_item">
-            <a href="#">About&nbsp;us</a>
+            <a href="#" class="active">Home</a>
           </li>
           <li class="nav__list_item">
-            <a href="#">Services</a>
+            <a href="#" class="active">About&nbsp;us</a>
           </li>
           <li class="nav__list_item">
-            <a href="#">Work</a>
+            <a href="#" class="active">Services</a>
           </li>
           <li class="nav__list_item">
-            <a href="#">Contact&nbsp;Us</a>
+            <a href="#" class="active">Work</a>
           </li>
+          <li class="nav__list_item">
+            <a href="#" class="active">Contact&nbsp;Us</a>
+          </li>
+          <li class="nav__list_item ">
+            <a href="#" class="hire-us active">Hire&nbsp;us</a>
+          </li>
+
         </ul>
-        <a href="#" class="nav__hire-us">Hire&nbsp;us</a>
+
       </nav>
       <h1 class="header-top__h1">Global digital agency</h1>
       <p class="header-top__quote">By the same illusion which lifts the horizon of the sea to the level of<br>
         the spectator on a hillside, the sable cloud beneath.</p>
-      <a href="#" class="header-top__button button">Learn more</a>
+      <a href="#" class="header-top__button button active">Learn more</a>
 
     </div>
     <div class="header-bottom">
@@ -56,19 +64,17 @@
         <p class="intro-quote">By the same illusion which<br>lifts the horizon.</p>
       </div>
       <div class="header-bottom__follow">
-        <a href="#" class="facebook">facebook</a>
-        <a href="#" class="twitter">twitter</a>
-        <a href="#" class="instagram">instagram</a>
+        <a href="#" class="facebook active">facebook</a>
+        <a href="#" class="twitter active">twitter</a>
+        <a href="#" class="instagram active">instagram</a>
       </div>
     </div>
 
     </div>
   </header>
 
-  <section class="welcome ">
-    <p class="heading welcome__heading">
-      Welcome
-    </p>
+  <section class="welcome">
+    <p class="heading welcome__heading">Welcome</p>
     <p class="welcome__about">
       By the same illusion which lifts the horizon of the sea to the level<br>
       of the spectator on a hillside, the sable cloud beneath was dished<br>
@@ -295,17 +301,17 @@
         <form class="message__form form" action="#" method="post">
           <label class="form__item">
             Your email <br>
-            <input class="form__item--email" type="email" name="email" id="email" required>
+            <input class="form__item--email active" type="email" name="email" id="email" required>
           </label>
           <label class="form__item">
             Your name<br>
-            <input class="form__item--name" type="text" name="name" id="name" required>
+            <input class="form__item--name active" type="text" name="name" id="name" required>
           </label>
           <label class="form__item">
             Your message<br>
-            <input class="form__item--message" type="text" name="message" id="message" required>
+            <input class="form__item--message active" type="text" name="message" id="message" required>
           </label>
-          <button class="button button--blue form__button" type="submit">Send</button>
+          <button class="button button--blue form__button active--2" type="submit">Send</button>
         </form>
 
       </section>
@@ -315,44 +321,46 @@
         <p class="heading contacts__heading">Contact us</p>
         <h3 class="contacts__about">By the same illusion<br>which lifts the horizon.</h3>
         <p class="contacts__call-us">call us</p>
-        <a class="contacts__phone" href="tel:+3 654 321 987">654 321 987</a>
+        <a class="contacts__phone active" href="tel:+3 654 321 987">654 321 987</a>
         <p class="contacts__visit-us">visit us</p>
         <address class="contacts__address">2905 West Drive,<br>Buffalo Grove</address>
 
         <div class="community">
-          <a class="community__twitter" href="#" target="_blank" rel="noopener"><img src="./images/twitter.svg"
+          <a class="community__twitter active" href="#" target="_blank" rel="noopener"><img src="./images/twitter.svg"
               alt="twitter"></a>
-          <a class="community__instagram" href="#" target="_blank" rel="noopener"><img src="./images/instagram.svg"
-              alt="instagram"></a>
-          <a class="community__facebook" href="#" target="_blank" rel="noopener"><img src="./images/facebook.svg"
+          <a class="community__instagram active" href="#" target="_blank" rel="noopener"><img
+              src="./images/instagram.svg" alt="instagram"></a>
+          <a class="community__facebook active" href="#" target="_blank" rel="noopener"><img src="./images/facebook.svg"
               alt="facebook"></a>
         </div>
       </section>
 
     </article>
 
-    <nav class="nav footer__nav">
-
-      <ul class="nav__list">
-        <li class="nav__list_item nav__list_item--black">
-          <a href="#">Home</a>
-        </li>
-        <li class="nav__list_item nav__list_item--black">
-          <a href="#">About&nbsp;us</a>
-        </li>
-        <li class="nav__list_item nav__list_item--black">
-          <a href="#">Services</a>
-        </li>
-        <li class="nav__list_item nav__list_item--black">
-          <a href="#">Work</a>
-        </li>
-        <li class="nav__list_item nav__list_item--black">
-          <a href="#">Contact&nbsp;Us</a>
-        </li>
-      </ul>
-    </nav>
-
+    <section class="footer-bottom">
+      <a class="footer-bottom__designer active" href="#">Design by @mariuszdaniel</a>
+      <nav class="footer-bottom__nav">
+        <ul class="nav__list nav__list--footer">
+          <li class="nav__list_item nav__list_item--black">
+            <a href="#" class="active">Home</a>
+          </li>
+          <li class="nav__list_item nav__list_item--black">
+            <a href="#" class="active">About&nbsp;us</a>
+          </li>
+          <li class="nav__list_item nav__list_item--black">
+            <a href="#" class="active">Services</a>
+          </li>
+          <li class="nav__list_item nav__list_item--black">
+            <a href="#" class="active">Work</a>
+          </li>
+          <li class="nav__list_item nav__list_item--black">
+            <a href="#" class="active">Contact&nbsp;Us</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </footer>
+
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 

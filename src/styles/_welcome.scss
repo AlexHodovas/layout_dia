@@ -1,12 +1,15 @@
 .welcome {
-  margin-left: 423px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 136px;
 
   &__heading {
-    margin-top: calc(-320px + 165px);
+    width: 705px;
   }
 
   &__about {
+    width: 742px;
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
@@ -14,16 +17,17 @@
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1300px) {
+@media (max-width: 800px) {
   .welcome {
-    margin-left: calc(50% - 300px);
-    margin-right: calc(50% - 300px);
-  }
-}
-
-@media (max-width: 999px) {
-  .welcome {
-    margin-left: calc(50% - 200px);
-    margin-right: calc(50% - 200px);
+    margin-top: -250px;
+    margin-bottom: 40px;
+  
+    &__heading {
+      width: 305px;
+    }
+  
+    &__about {
+      width: 342px;
+    }
   }
 }
