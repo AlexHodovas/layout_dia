@@ -1,6 +1,6 @@
 .features {
   margin-top: -198px;
-  height: 1065px;
+  padding-bottom: 100px;
   background-image: url(../images/features/Bg.png);
   background-size: cover;
 
@@ -48,16 +48,61 @@
 @media (max-width: 1250px) {
 
   .features {
+    padding-top: 100px;
     background: rgba(86, 204, 242, 1);
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    &-top {
+      margin-left: 0;
+    }
+
+    &-bottom {
+      margin-left: 0;
+    }
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
+  .features {
+    padding-top: 0;
+
+    &-top {
+
+      &__heading {
+        padding-top: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
 
   .features {
-    margin-left: -100px;
-    height: 1120px;
-  }
+    padding-top: 200px;
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    padding-bottom: 0;
 
+    &-top {
+      margin-left: 0;
+      margin-top: -250px;
+    }
+
+    &-bottom {
+      margin-left: 0;
+      margin-top: 69px;
+
+      &-card {
+
+        &__img {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
 }

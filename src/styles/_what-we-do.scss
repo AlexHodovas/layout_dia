@@ -57,36 +57,13 @@
     &__cards {
       justify-content: center;
     }
-  }
-}
 
-@media (max-width: 999px) {
-  .what-we-do {
-    margin-top: 70px;
-
-    &__title {
-      font-size: 30px;
-    }
-
-    &__cards {
-      margin-top: 70px;
-      margin-left: 150px;
+    .card:first-child {
+      margin-left: 20px;
     }
 
     .card {
-      margin-left: 50px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &__about {
-        margin-top: 30px;
-      }
-
-      &__description {
-        margin-top: 20px;
-      }
+      margin-left: 40px;
     }
   }
 }
@@ -98,7 +75,6 @@
 
     &__cards {
       margin-top: 30px;
-      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -119,6 +95,22 @@
 
       &__description {
         margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  .what-we-do {
+    margin-top: 40px;
+
+    .card {
+      margin-top: 30px;
+
+      &__img {
+        width: 264px;
+        height: 214px;
       }
     }
   }

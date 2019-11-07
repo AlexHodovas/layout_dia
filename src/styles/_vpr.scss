@@ -34,14 +34,32 @@
 
     &__title {
       padding-top: 50px;
-      font-size: 38px;
+      font-size: 30px;
     }
 
     &__about {
-      width: 450px;
       margin: 57px auto 0;
       font-weight: 600;
-      font-size: 24px;
+      font-size: 20px;
+      width: 100%;
+      height: max-content;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .vpr {
+    height: max-content;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__about {
+      font-size: 18px;
+      width: 250px;
+      height: max-content;
     }
   }
 }

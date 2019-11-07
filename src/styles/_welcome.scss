@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 136px;
+  margin-top: -11px;
 
   &__heading {
     width: 705px;
@@ -19,13 +20,13 @@
 
 @media (max-width: 800px) {
   .welcome {
-    margin-top: -250px;
+    margin-top: -130px;
     margin-bottom: 40px;
-  
+
     &__heading {
       width: 305px;
     }
-  
+
     &__about {
       width: 342px;
     }

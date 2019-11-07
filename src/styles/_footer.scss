@@ -160,3 +160,32 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .footer {
+
+    &-bottom {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+
+      &__designer {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .message-and-contacts {
+    .contacts {
+
+      .community {
+        margin-top: 53px;
+        justify-content: center;
+
+        & > * {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

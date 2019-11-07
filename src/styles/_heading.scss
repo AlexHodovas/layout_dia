@@ -15,3 +15,19 @@
     background-position-y: bottom;
   }
 }
+
+@media (max-width: 640px) {
+  .heading {
+    background: url(../images/rectangular.svg) no-repeat;
+    padding-left: 37px;
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 19px;
+
+    &--white {
+      color: #fff;
+      background: url(../images/rectangular-white.svg) no-repeat;
+      background-position-y: bottom;
+    }
+  }
+}

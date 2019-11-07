@@ -2,6 +2,7 @@
 .header {
 
   &-top {
+    padding-left: 227px;
     background: linear-gradient(115deg, rgba(86, 204, 242, 1) 71%,
         rgba(255, 255, 255, 1) 71%);
     padding-bottom: 400px;
@@ -9,7 +10,7 @@
     &__h1,
     &__quote,
     &__button {
-      margin-left: 325px;
+      margin-left: 108px;
     }
 
     &__h1 {
@@ -102,7 +103,7 @@
       left: calc(100% - 400px);
       top: 340px;
 
-      &>* {
+      & > * {
         font-weight: 800;
         font-size: 13px;
         line-height: 150%;
@@ -116,49 +117,24 @@
   }
 }
 
-@media (min-width: 1210px) and (max-width: 1370px) {
+@media (min-width: 1220px) and (max-width: 1400px) {
 
   .header {
 
     &-top {
-
-      &__h1 {
-        margin-left: 210px;
-      }
-
-      &__quote {
-        margin-left: 210px;
+  
+      &__h1,
+      &__quote,
+      &__button {
+        margin-left: 0;
       }
     }
+
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1210px) {
+@media (min-width: 1000px) and (max-width: 1219px) {
 
-  .header {
-
-    &-top {
-      background: rgba(86, 204, 242, 1);
-
-      &__h1 {
-        margin-left: 160px;
-      }
-
-      &__quote {
-        margin-left: 160px;
-      }
-    }
-
-    &-bottom {
-
-      &__slider {
-        width: calc(100% - 350px);
-      }
-    }
-  }
-}
-
-@media (max-width: 999px) {
   .header {
 
     &-top {
@@ -167,7 +143,38 @@
       &__h1,
       &__quote,
       &__button {
-        margin-left: 100px;
+        margin-left: 0;
+      }
+
+      &__h1 {
+        font-size: 40px;
+      }
+  
+      &__quote {
+        font-size: 24px;
+        line-height: 150%;
+        margin-top: 22px;
+        width: 420px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .header {
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      background: rgba(86, 204, 242, 1);
+
+      &__h1,
+      &__quote,
+      &__button {
+        margin-left: 0;
       }
 
       &__h1 {
@@ -176,6 +183,7 @@
       }
 
       &__quote {
+        width: 350px;
         font-size: 20px;
       }
     }
@@ -193,6 +201,63 @@
 
       &__follow {
         left: calc(100% - 340px);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+
+    &-top {
+      background: rgba(86, 204, 242, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__h1,
+      &__quote,
+      &__button {
+        margin-left: 0;
+      }
+
+      &__h1 {
+        margin-top: 60px;
+        font-size: 25px;
+      }
+
+      &__quote {
+        width: 250px;
+        font-size: 20px;
+      }
+    }
+
+    &-bottom {
+
+      &__slider {
+        width: 100%;
+
+        .switch {
+          left: 100px;
+          top: 603px;
+        }
+
+        .intro,
+        .intro-quote {
+          left: 10px;
+        }
+      }
+
+      &__follow {
+        left: 0;
+        top: 730px;
+        transform: rotate(0deg);
+        flex-direction: row;
+        margin-left: 18px;
+
+        & > * {
+          margin-right: 30px;
+        }
       }
     }
   }

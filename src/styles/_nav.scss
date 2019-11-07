@@ -1,90 +1,103 @@
  /* stylelint-disable */
 
-.nav__list {
-  display: flex;
-  margin-left: 227px;
-  padding-top: 51px;
+ .nav__list {
+   display: flex;
+   padding-top: 51px;
 
-  &--footer {
-    margin-left: 350px;
-    padding-top: 0;
-  }
+   &--footer {
+     margin-left: 350px;
+     padding-top: 0;
+   }
 
-  .logo {
-    width: 53px;
-    height: 32px;
-    line-height: 100%;
-    margin-right: 143px;
-    position: relative;
-    top: -3px;
-  }
+   .logo {
+     width: 53px;
+     height: 32px;
+     line-height: 100%;
+     margin-right: 143px;
+     position: relative;
+     top: -3px;
+   }
 
-  &_item {
-    line-height: 150%;
-    margin-right: 63px;
+   &_item {
+     line-height: 150%;
+     margin-right: 63px;
 
-    &--black>* {
-      color: #253757;
-    }
+     &--black>* {
+       color: #253757;
+     }
 
-    .hire-us {
-      margin-left: 72px;
-      position: relative;
+     .hire-us {
+       margin-left: 72px;
+       position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        width: 64px;
-        height: 4px;
-        left: -5px;
-        top: 35px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
-            rgba(255, 255, 255, 0) 100%),
-          #fcc304;
-        border-radius: 2px;
-      }
-    }
-  }
-}
+       &::after {
+         content: "";
+         position: absolute;
+         width: 64px;
+         height: 4px;
+         left: -5px;
+         top: 35px;
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
+             rgba(255, 255, 255, 0) 100%),
+           #fcc304;
+         border-radius: 2px;
+       }
+     }
+   }
+ }
 
  @media (max-width: 1400px) {
 
-  .nav__list {
-    margin-left: 150px;
+   .nav__list {
 
-    .logo {
-      margin-right: 70px;
-    }
+     .logo {
+       margin-right: 70px;
+     }
 
-    &_item {
-      margin-right: 50px;
+     &_item {
+       margin-right: 50px;
 
-      .hire-us {
-        margin-left: 0;
-      }
-    }
-  }
+       .hire-us {
+         margin-left: 0;
+       }
+     }
+
+     &--footer {
+       margin-left: 100px;
+     }
+   }
  }
 
  @media (max-width: 999px) {
 
-  .nav__list {
-    margin-left: 0;
-    flex-direction: column;
-    align-items: center;
+   .nav__list {
+     margin-left: 0;
+     flex-direction: column;
+     align-items: center;
 
-    &--footer {
-      margin-left: 150px;
-    }
+     &--footer {
+       margin-left: 150px;
+     }
 
-    .logo {
-      margin-right: 0;
-    }
+     .logo {
+       margin-right: 0;
+     }
 
-    &_item {
-      margin-bottom: 30px;
-    }
-  }
+     &_item {
+       margin-bottom: 30px;
+     }
+   }
+ }
+
+ @media (max-width: 600px) {
+
+   .nav__list {
+     margin-left: 0;
+
+     &--footer {
+       margin-left: 0;
+     }
+   }
  }
 
  /* stylelint-enable */
