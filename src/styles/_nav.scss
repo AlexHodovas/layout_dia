@@ -68,7 +68,28 @@
    }
  }
 
- @media (max-width: 999px) {
+ @media (max-width: 1050px) {
+
+  .nav__list {
+    margin-left: -227px;
+    flex-direction: column;
+    align-items: center;
+
+    &--footer {
+      margin-left: 150px;
+    }
+
+    .logo {
+      margin-right: 0;
+    }
+
+    &_item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+ @media (max-width: 1000px) {
 
    .nav__list {
      margin-left: 0;
@@ -85,17 +106,6 @@
 
      &_item {
        margin-bottom: 30px;
-     }
-   }
- }
-
- @media (max-width: 600px) {
-
-   .nav__list {
-     margin-left: 0;
-
-     &--footer {
-       margin-left: 0;
      }
    }
  }
