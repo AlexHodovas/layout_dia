@@ -293,7 +293,24 @@ input:hover {
   .nav__list--footer {
     margin-left: 100px; } }
 
-@media (max-width: 999px) {
+@media (max-width: 1050px) {
+  .nav__list {
+    margin-left: -227px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .nav__list--footer {
+      margin-left: 150px; }
+    .nav__list .logo {
+      margin-right: 0; }
+    .nav__list_item {
+      margin-bottom: 30px; } }
+
+@media (max-width: 1000px) {
   .nav__list {
     margin-left: 0;
     -webkit-box-orient: vertical;
@@ -309,12 +326,6 @@ input:hover {
       margin-right: 0; }
     .nav__list_item {
       margin-bottom: 30px; } }
-
-@media (max-width: 600px) {
-  .nav__list {
-    margin-left: 0; }
-    .nav__list--footer {
-      margin-left: 0; } }
 
 /* stylelint-enable */
 .heading {
@@ -453,7 +464,8 @@ input:hover {
       margin-left: 0; }
     .what-we-do .card {
       margin-top: 10px;
-      margin-left: 0; }
+      margin-left: 0;
+      margin-bottom: 30px; }
       .what-we-do .card__about {
         margin-top: 20px; }
       .what-we-do .card__description {
@@ -787,19 +799,40 @@ input:hover {
       margin-right: 20px; } }
 
 @media (max-width: 999px) {
-  .testimonials-bottom {
-    margin-top: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 227px; }
-    .testimonials-bottom-card {
-      margin-bottom: 40px;
-      margin-right: 0; } }
+  .testimonials {
+    padding-top: 0; }
+    .testimonials-top {
+      margin-top: 100px;
+      margin-left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .testimonials-top__heading {
+        margin-top: 20px;
+        margin-left: -180px; }
+    .testimonials-bottom {
+      margin-top: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 0; }
+      .testimonials-bottom-card {
+        margin-bottom: 40px;
+        margin-right: 0; } }
 
 @media (max-width: 600px) {
   .testimonials-top {
@@ -949,6 +982,8 @@ input:hover {
     width: calc(100% - 150px); }
     .message-and-contacts .message {
       width: 400px; }
+      .message-and-contacts .message .form__button {
+        margin-top: 0; }
     .message-and-contacts .contacts__about {
       font-size: 24px; }
     .message-and-contacts .contacts__phone, .message-and-contacts .contacts__address {
@@ -957,9 +992,20 @@ input:hover {
       margin-top: 53px;
       width: 192px; }
   .footer-bottom {
-    margin-left: 80px;
+    margin-left: 0;
     margin-top: 70px;
-    margin-bottom: 70px; } }
+    margin-bottom: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer-bottom__designer {
+      padding-top: 25px; }
+    .footer-bottom__nav {
+      margin-left: -150px; } }
 
 @media (max-width: 900px) {
   .message-and-contacts {
@@ -972,34 +1018,33 @@ input:hover {
         -ms-flex-align: center;
             align-items: center; }
     .message-and-contacts .message {
-      width: 300px; }
+      width: 80%;
+      text-align: center; }
+      .message-and-contacts .message__heading {
+        width: 204px;
+        margin: 0 auto; }
       .message-and-contacts .message .form {
         margin-top: 80px; }
         .message-and-contacts .message .form__button {
-          margin-top: 0;
-          width: 180px; }
+          width: 180px;
+          margin: 0 auto; }
     .message-and-contacts .contacts {
-      margin-top: 70px; }
+      margin-top: 70px;
+      text-align: center; }
+      .message-and-contacts .contacts__heading {
+        width: 125px;
+        margin: 0 auto;
+        padding-bottom: 20px; }
       .message-and-contacts .contacts__about {
         font-size: 24px; }
       .message-and-contacts .contacts__phone, .message-and-contacts .contacts__address {
         font-size: 20px; }
       .message-and-contacts .contacts .community {
-        margin-top: 53px;
-        width: 192px; } }
+        width: 192px;
+        margin: 0 auto;
+        margin-top: 53px; } }
 
 @media (max-width: 600px) {
-  .footer-bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0; }
-    .footer-bottom__designer {
-      margin-bottom: 30px; }
   .message-and-contacts .contacts .community {
     margin-top: 53px;
     -webkit-box-pack: center;
