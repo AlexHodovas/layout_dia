@@ -3,19 +3,14 @@
   margin-top: 162px;
   padding-bottom: 291px;
   background: #fcfcfd;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   .main-card {
     padding-top: 160px;
     margin-left: 227px;
     text-align: left;
-
-    &__about {
-      margin-top: 19px;
-      font-weight: 900;
-      font-size: 32px;
-      line-height: 140%;
-      color: #253757;
-    }
 
     &__description {
       margin-top: 64px;
@@ -146,6 +141,7 @@
     align-items: center;
     position: static;
     margin-top: 0;
+    padding-bottom: 70px;
 
     .main-card {
       margin-left: 0;
@@ -164,5 +160,32 @@
         grid-row-gap: 70px;
       }
     }
+  }
+}
+
+@media (max-width: 400px) {
+
+  .process {
+    margin-top: 0;
+    padding-bottom: 0;
+
+    .main-card {
+      padding-top: 70px;
+
+      &__description {
+        margin-top: 64px;
+        font-weight: normal;
+        line-height: 120%;
+        width: 300px;
+      }
+    }
+
+    .additional-cards-1col {
+      grid-template-columns: 320px;
+
+       &--2col {
+      grid-template-columns: 320px;
+       }
+     }
   }
 }

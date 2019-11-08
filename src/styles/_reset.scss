@@ -24,11 +24,11 @@
    color: #fff;
  }
 
- body {
-   max-width: 1600px;
-   margin: auto;
-   background: #fff;
- }
+//  body {
+//    max-width: 1600px;
+//    margin: auto;
+//    background: #fcfcfc;
+//  }
 
  button {
    border: none;
@@ -82,6 +82,12 @@
    }
  }
 
- //  *{
- //   outline: 1px solid red;
- // }
+//   *{
+//    outline: 1px solid red;
+//  }
+
+ .container--blue {
+  background: linear-gradient(115deg, rgba(86, 204, 242, 1) 71%,
+  rgba(255, 255, 255, 1) 71%);
+ }
+

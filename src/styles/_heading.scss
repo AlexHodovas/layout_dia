@@ -16,6 +16,16 @@
   }
 }
 
+.heading-and-about {
+
+  .after-heading {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    color: #253757;
+  }
+}
+
 @media (max-width: 640px) {
   .heading {
     background: url(../images/rectangular.svg) no-repeat;
@@ -28,6 +38,26 @@
       color: #fff;
       background: url(../images/rectangular-white.svg) no-repeat;
       background-position-y: bottom;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    text-align: center;
+    padding-left: 37px;
+    height: 21px;
+  }
+
+  .heading-and-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .after-heading {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
     }
   }
 }

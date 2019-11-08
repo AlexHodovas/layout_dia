@@ -3,11 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 136px;
-  margin-top: -11px;
-
-  &__heading {
-    width: 705px;
-  }
+  margin-top: -150px;
 
   &__about {
     width: 742px;
@@ -20,15 +16,26 @@
 
 @media (max-width: 800px) {
   .welcome {
-    margin-top: -130px;
+    margin-top: -170px;
     margin-bottom: 40px;
 
-    &__heading {
-      width: 305px;
+    &__about {
+      width: 300px;
+      font-size: 18px;
+      line-height: 120%;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome {
+    margin-top: -170px;
+    margin-bottom: 40px;
 
     &__about {
-      width: 342px;
+      width: 200px;
+      font-size: 16px;
+      line-height: 1;
     }
   }
 }
