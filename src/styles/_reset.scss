@@ -24,12 +24,6 @@
    color: #fff;
  }
 
-//  body {
-//    max-width: 1600px;
-//    margin: auto;
-//    background: #fcfcfc;
-//  }
-
  button {
    border: none;
  }
@@ -41,12 +35,12 @@
    line-height: 150%;
    letter-spacing: 1px;
    color: #253757;
-   transition: background-color 0.5s, color 0.5s;
+   transition: background-color 0.3s, color 0.3s;
 
    &--blue {
      background: #2f80ed;
      color: white;
-     transition: background-color 0.5s, color 0.5s;
+     transition: background-color 0.3s, color 0.3s;
    }
  }
 
@@ -62,13 +56,20 @@
  input:hover {
    cursor: pointer;
  }
+.active:hover {
+  color: orange;
+}
 
- .active:hover {
-   color: #2f80ed;
+ .active-btn:hover {
+  color: white;
+  background: #2f80ed;
+  border: 1px solid white;
  }
 
- .active--orange:hover {
-   color: orange;
+ .active--white:hover {
+   color: #2f80ed;
+   background: white;
+   border: 1px solid #2f80ed;
  }
 
  .button-in-slider {
@@ -82,12 +83,7 @@
    }
  }
 
-//   *{
-//    outline: 1px solid red;
-//  }
-
  .container--blue {
   background: linear-gradient(115deg, rgba(86, 204, 242, 1) 71%,
   rgba(255, 255, 255, 1) 71%);
  }
-
