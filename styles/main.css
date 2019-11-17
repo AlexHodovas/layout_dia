@@ -45,11 +45,25 @@ input {
   border: none;
   border-bottom: 1px solid #e1e1e1;
   width: 100%;
-  color: #2f80ed; }
+  color: #2f80ed;
+  margin-bottom: 48px;
+  height: 40px;
+  padding-left: 10px;
+  -webkit-transition: border .3s;
+  transition: border .3s; }
+  input:focus {
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.active {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
 
 a:hover,
-button:hover,
-input:hover {
+button:hover {
   cursor: pointer; }
 
 .active:hover {
@@ -73,6 +87,9 @@ input:hover {
 
 .container--blue {
   background: linear-gradient(115deg, #56ccf2 71%, white 71%); }
+
+.logo:focus {
+  outline: none; }
 
 /* stylelint-disable */
 .header-top {
@@ -362,6 +379,7 @@ input:hover {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
   .menu__toggle:checked ~ .nav__list {
+    margin-top: 20px;
     opacity: 1;
     top: 40px; }
   .menu__btn {
@@ -436,7 +454,10 @@ input:hover {
   .nav__link:hover {
     color: #334563; }
   .nav__link:active {
-    color: #334563; } }
+    color: #334563; }
+  .nav__list_item .hire-us::after {
+    width: 0;
+    height: 0; } }
 
 .heading {
   font-weight: 800;
@@ -1062,7 +1083,7 @@ input:hover {
         font-size: 14px;
         line-height: 150%;
         color: #152032;
-        margin-bottom: 48px; }
+        margin-bottom: 0; }
       .message-and-contacts .message .form__button {
         margin-top: 105px;
         width: 226px; }
