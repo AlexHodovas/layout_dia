@@ -1,0 +1,65 @@
+.vpr {
+  background-image: url(../images/bg-elipses.svg);
+  height: 608px;
+
+  &__title {
+    padding-top: 160px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #253757;
+  }
+
+  &__about {
+    width: 754px;
+    margin: 57px auto 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #334563;
+  }
+
+  &__button {
+    display: inline-block;
+    margin: 55px calc(50% - 90px) 0 calc(50% - 90px);
+  }
+}
+
+@media (max-width: 800px) {
+
+  .vpr {
+    height: 400px;
+
+    &__title {
+      padding-top: 50px;
+      font-size: 30px;
+    }
+
+    &__about {
+      margin: 57px auto 0;
+      font-weight: 600;
+      font-size: 20px;
+      width: 100%;
+      height: max-content;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .vpr {
+    height: max-content;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__about {
+      font-size: 18px;
+      width: 250px;
+      height: max-content;
+    }
+  }
+}

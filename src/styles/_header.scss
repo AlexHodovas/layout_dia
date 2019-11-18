@@ -1,7 +1,11 @@
 /* stylelint-disable */
 .header {
 
+
   &-top {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 227px;
     background: linear-gradient(115deg, rgba(86, 204, 242, 1) 71%,
         rgba(255, 255, 255, 1) 71%);
     padding-bottom: 400px;
@@ -9,7 +13,7 @@
     &__h1,
     &__quote,
     &__button {
-      margin-left: 325px;
+      margin-left: 108px;
     }
 
     &__h1 {
@@ -32,12 +36,14 @@
   }
 
   &-bottom {
+    max-width: 1600px;
+    margin: 0 auto;
     position: relative;
     top: -320px;
 
     &__slider {
       position: relative;
-      width: calc(100% - 227px);
+      width: calc(100% - 454px);
       margin: 0 auto;
       height: 640px;
       background-size: cover;
@@ -99,10 +105,10 @@
       align-items: center;
       transform: rotate(90deg);
       position: absolute;
-      left: calc(100% - 291px);
+      left: calc(100% - 400px);
       top: 340px;
 
-      &>* {
+      & > * {
         font-weight: 800;
         font-size: 13px;
         line-height: 150%;
@@ -116,42 +122,24 @@
   }
 }
 
-@media (min-width: 1100px) and (max-width: 1350px) {
+@media (min-width: 1220px) and (max-width: 1400px) {
 
   .header {
 
     &-top {
 
-      &__h1 {
-        margin-left: 150px;
-      }
-
-      &__quote {
-        margin-left: 150px;
+      &__h1,
+      &__quote,
+      &__button {
+        margin-left: 0;
       }
     }
+
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1100px) {
+@media (min-width: 1050px) and (max-width: 1219px) {
 
-  .header {
-
-    &-top {
-
-      &__h1 {
-        margin-left: 100px;
-      }
-
-      &__quote {
-        margin-left: 70px;
-      }
-    }
-  }
-
-}
-
-@media (max-width: 999px) {
   .header {
 
     &-top {
@@ -160,7 +148,38 @@
       &__h1,
       &__quote,
       &__button {
-        margin-left: 100px;
+        margin-left: 0;
+      }
+
+      &__h1 {
+        font-size: 40px;
+      }
+
+      &__quote {
+        font-size: 24px;
+        line-height: 150%;
+        margin-top: 22px;
+        width: 420px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .header {
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      background: rgba(86, 204, 242, 1);
+
+      &__h1,
+      &__quote,
+      &__button {
+        margin-left: 0;
       }
 
       &__h1 {
@@ -169,21 +188,86 @@
       }
 
       &__quote {
+        width: 350px;
         font-size: 20px;
       }
     }
 
     &-bottom {
 
-      &__follow {
-        left: calc(100% - 300px);
+      &__slider {
+        width: calc(100% - 210px);
+
+        .intro,
+        .intro-quote {
+          left: 10px;
+        }
       }
 
-      .intro,
-      .intro-quote {
-        left: 10px;
+      &__follow {
+        left: calc(100% - 340px);
       }
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+
+    &-top {
+      background: rgba(86, 204, 242, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__h1,
+      &__quote,
+      &__button {
+        margin-left: 0;
+      }
+
+      &__h1 {
+        margin-top: 60px;
+        font-size: 25px;
+      }
+
+      &__quote {
+        width: 250px;
+        font-size: 20px;
+      }
+    }
+
+    &-bottom {
+
+      &__slider {
+        width: 100%;
+
+        .switch {
+          left: 100px;
+          top: 603px;
+        }
+
+        .intro,
+        .intro-quote {
+          left: 10px;
+        }
+      }
+
+      &__follow {
+        left: 0;
+        position: relative;
+        justify-content: center;
+        top: 100px;
+        transform: rotate(0deg);
+        flex-direction: row;
+        margin-left: 18px;
+
+        & > * {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
 /* stylelint-enable */

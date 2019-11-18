@@ -1,33 +1,109 @@
  /* stylelint-disable */
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
-a,
-p,
-button {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  color: #fff;
+ html,
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ ul,
+ li,
+ a,
+ p,
+ button,
+ input {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   font-family: "Muli";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   color: #fff;
+ }
+
+ button {
+   border: none;
+ }
+
+ .button {
+   background: #fff;
+   border-radius: 64px;
+   padding: 16px 65px;
+   line-height: 150%;
+   letter-spacing: 1px;
+   color: #253757;
+   transition: background-color 0.2s, color 0.2s;
+
+   &--blue {
+     background: #2f80ed;
+     color: white;
+     transition: background-color 0.2s, color 0.2s;
+   }
+ }
+
+ input {
+   border: none;
+   border-bottom: 1px solid #e1e1e1;
+   color: #2f80ed;
+   margin-bottom: 48px;
+   height: 40px;
+   padding-left: 10px;
+   transition: border .3s;
+
+    &:focus {
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-family: "Muli";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+  }
+ }
+
+ .active {
+   transition: color 0.5s;
+ }
+
+ a:hover,
+ button:hover {
+   cursor: pointer;
+ }
+
+.active:hover {
+  color: orange;
 }
 
-.button {
-  background: #fff;
-  border-radius: 64px;
-  padding: 16px 65px;
-  line-height: 150%;
-  letter-spacing: 1px;
-  color: #253757;
-}
+ .active-btn:hover {
+  color: white;
+  background: #2f80ed;
+ }
+
+ .active--orange:hover {
+   color: #2f80ed;
+   background: orange;
+ }
+
+ .button-in-slider {
+   background: none;
+   border: none;
+   width: 0;
+
+   &:focus {
+     width: 0;
+     outline: none;
+   }
+ }
+
+ .container--blue {
+  background: linear-gradient(115deg, rgba(86, 204, 242, 1) 71%,
+  rgba(255, 255, 255, 1) 71%);
+ }
+
+ .logo:focus {
+   outline: none;
+ }

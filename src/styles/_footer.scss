@@ -1,0 +1,213 @@
+.message-and-contacts {
+  width: calc(100% - 454px);
+  margin: 96px auto 86px;
+  display: flex;
+  justify-content: space-between;
+
+  .message {
+    width: 656px;
+
+    .form {
+      margin-top: 106px;
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 150%;
+        color: #152032;
+        margin-bottom: 0;
+      }
+
+      &__button {
+        margin-top: 105px;
+        width: 226px;
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+
+    &__about {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 140%;
+      color: #253757;
+    }
+
+    &__call-us,
+    &__visit-us {
+      margin-top: 43px;
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #334563;
+    }
+
+    &__phone,
+    &__address {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #56ccf2;
+    }
+
+    .community {
+      margin-top: 53px;
+      display: flex;
+      width: 192px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-bottom {
+    display: flex;
+    margin-left: 227px;
+    margin-top: 136px;
+    margin-bottom: 83px;
+
+    &__designer {
+      line-height: 150%;
+      color: #253757;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .message-and-contacts {
+    width: calc(100% - 150px);
+
+    .message {
+      width: 400px;
+
+      .form {
+
+        &__button {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .contacts {
+
+      &__about {
+        font-size: 24px;
+      }
+
+      &__phone,
+      &__address {
+        font-size: 20px;
+      }
+
+      .community {
+        margin-top: 53px;
+        width: 192px;
+      }
+    }
+
+  }
+
+  .footer {
+    &-bottom {
+      margin-left: 0;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      flex-flow: column-reverse;
+      align-items: center;
+
+      &__designer {
+        padding-top: 25px;
+      }
+
+      &__nav {
+        margin-left: -150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .message-and-contacts {
+
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .message {
+      width: 80%;
+      text-align: center;
+
+      &__heading {
+        width: 204px;
+        margin: 0 auto;
+      }
+
+      .form {
+        margin-top: 80px;
+
+        &__button {
+          width: 180px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .contacts {
+      margin-top: 70px;
+      text-align: center;
+
+      &__heading {
+        width: 125px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+
+      &__about {
+        font-size: 24px;
+      }
+
+      &__phone,
+      &__address {
+        font-size: 20px;
+      }
+
+      .community {
+        width: 192px;
+        margin: 0 auto;
+        margin-top: 53px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .message-and-contacts {
+    .contacts {
+
+      .community {
+        margin-top: 53px;
+        justify-content: center;
+
+        & > * {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
